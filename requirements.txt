@@ -1,0 +1,13 @@
+langgraph
+langchain
+langchain_aws
+langchain-community
+gradio
+gradio[oauth]
+spacy
+requests
+pandas
+unstructured
+beautifulsoup4
+lxml
+wikipedia
