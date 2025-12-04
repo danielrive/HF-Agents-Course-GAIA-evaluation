@@ -21,9 +21,16 @@ from app.tools.audio_tool import transcribe_audio
 logger = logging.getLogger(__name__)
 
 # Define the LLM
+# Bedrock configuration (commented out)
+# llm = init_chat_model(
+#     "us.amazon.nova-premier-v1:0",
+#     model_provider="bedrock_converse"
+# )
+
+# OpenAI configuration
 llm = init_chat_model(
-    "us.amazon.nova-premier-v1:0",
-    model_provider="bedrock_converse"
+    "gpt-4o-mini",
+    model_provider="openai"
 )
 
 ## Analysis prompt
